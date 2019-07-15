@@ -1,0 +1,32 @@
+{
+  "name": "rush-efrei-klaus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "babel-core": "^6.26.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.0",
+    "@babel/core": "^7.5.4",
+    "@babel/node": "^7.5.0",
+    "@babel/plugin-proposal-class-properties": "^7.5.0",
+    "@babel/plugin-proposal-private-methods": "^7.4.4",
+    "@babel/preset-env": "^7.5.4"
+  },
+  "scripts": {
+    "dev": "npx babel-node src/main.js",
+    "build": "npx babel src/ --out-dir .dist/ --copy-files",
+    "start": "node dist/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcddier/rush-efrei-klaus.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcddier/rush-efrei-klaus/issues"
+  },
+  "homepage": "https://github.com/marcddier/rush-efrei-klaus#readme"
+}
