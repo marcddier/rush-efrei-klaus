@@ -62,4 +62,37 @@ export default class Elf {
     packaging.toy = "";
     return toy;
   }
+
+  /**
+   * 
+   * @param {Furniture} furniture 
+   * @param {Toy} obj 
+   */
+  put(furniture, obj) {
+    if (furniture.type == "table") {
+      if (furniture.content.length >= 10) {
+        console.log("table is full");
+        return;
+      }
+      furniture.content.push(obj);
+    } else if (furniture.type == "convoyerBelt") {
+      furniture.item = obj
+    }
+  }
+
+  take(furniture) {
+
+  }
+
+  look(furniture) {
+    if (furniture.type == "table") {
+      let arr = []
+      for (let content of furniture.content) {
+        arr.push(content);
+      }
+      console.log(arr);
+    } else if (furniture.type == "convoyerBelt") {
+      console.log(furniture.item);
+    }
+  }
 }
