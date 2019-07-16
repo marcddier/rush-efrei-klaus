@@ -7,7 +7,7 @@ export default class Toy {
     this.type = ''
   }
 
-  isMove() {}
+  isMoved() {}
 
   getType() {
     return this.type
